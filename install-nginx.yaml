@@ -2,7 +2,7 @@
   hosts: frontend
   tasks:
   - name : install nginx
-    ansible.builtin.apt:
+    ansible.builtin.package:
         name: nginx
         state: latest
 
